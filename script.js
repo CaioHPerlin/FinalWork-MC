@@ -29,7 +29,7 @@ class Article {
 				return `<article onclick="window.open('${this.url}', target='_self')">
 							<h2>${this.title}</h2>
 							<p>${this.description}</p>
-							<h3 style="display:inline-block">${this.name}</h3>
+							<h3>${this.name}</h3>
 							<h3 style="float:right">${convertedDate} | ${this.author}</h3>
 						</article>`;
 			} else {
@@ -55,7 +55,7 @@ class FeaturedArticle extends Article {
 							<img src=${this.urlToImage}></img>
 							<h2>${this.title}</h2>
 							<p>${this.description}</p>
-							<h3 style="display:inline-block">${this.name}</h3>
+							<h3>${this.name}</h3>
 							<h3 style="float:right">${convertedDate} | ${this.author}</h3>
 						</article>`
 			} else {
